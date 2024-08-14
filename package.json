@@ -1,0 +1,16 @@
+{
+  "name": "base_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development nodemon src/index.js"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "http-status": "^1.7.4",
+    "logger": "^0.0.1",
+    "mongoose": "^8.5.2",
+    "nodemon": "^3.1.4"
+  }
+}

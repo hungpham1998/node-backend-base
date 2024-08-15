@@ -1,3 +1,4 @@
+const httpStatus = require('http-status');
 const itemsRoutes = require('./itemsRoutes');
 const usersRoutes = require('./usersRoutes');
 
@@ -7,7 +8,7 @@ const routes = {
 };
 
 const notFound = (req, res) => {
-  res.statusCode = 404;
+  res.statusCode = httpStatus.NOT_FOUND;
   res.end(JSON.stringify({ message: 'Not Found' }));
 };
 
